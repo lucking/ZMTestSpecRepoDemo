@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		21B4C71920DB4D211BCFA663 /* Pods_ZMTestSpecRepoDemo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMTestSpecRepoDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC88EE3BE1E3DDF863B8D9F /* Pods_ZMTestSpecRepoDemo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMTestSpecRepoDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		460A990C2EA946B8757C364E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5096BC1291A5443E6FD92D08 /* ZMTestSpecRepoDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZMTestSpecRepoDemo.podspec; path = ../ZMTestSpecRepoDemo.podspec; sourceTree = "<group>"; };
+		460A990C2EA946B8757C364E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5096BC1291A5443E6FD92D08 /* ZMTestSpecRepoDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZMTestSpecRepoDemo.podspec; path = ../ZMTestSpecRepoDemo.podspec; sourceTree = "<group>"; };
 		5A3C089D106687BAC359282A /* Pods-ZMTestSpecRepoDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMTestSpecRepoDemo_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Example/Pods-ZMTestSpecRepoDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5CA0354D8115895DDB0D2CBE /* Pods-ZMTestSpecRepoDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMTestSpecRepoDemo_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Tests/Pods-ZMTestSpecRepoDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZMTestSpecRepoDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMTestSpecRepoDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A614CBDA61C0A76F59B1A6D /* Pods-ZMTestSpecRepoDemo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMTestSpecRepoDemo_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Example/Pods-ZMTestSpecRepoDemo_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B5BBF952217706FC79BCF4B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B5BBF952217706FC79BCF4B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EC317F23420FFB0C761B89F1 /* Pods-ZMTestSpecRepoDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMTestSpecRepoDemo_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Tests/Pods-ZMTestSpecRepoDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,7 +208,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				81054244E8250B59B718CED5 /* [CP] Embed Pods Frameworks */,
-				778DEF5EB1B70EA69FFE34A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,8 +226,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				6F41112BCE18CD557C42A2B8 /* [CP] Embed Pods Frameworks */,
-				4A6B94C3EFACEA0DB57BE5A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -315,58 +313,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4A6B94C3EFACEA0DB57BE5A7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Tests/Pods-ZMTestSpecRepoDemo_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F41112BCE18CD557C42A2B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Tests/Pods-ZMTestSpecRepoDemo_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		778DEF5EB1B70EA69FFE34A6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Example/Pods-ZMTestSpecRepoDemo_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		81054244E8250B59B718CED5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Example/Pods-ZMTestSpecRepoDemo_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ZMTestSpecRepoDemo_Example/Pods-ZMTestSpecRepoDemo_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ZMTestSpecRepoDemo/ZMTestSpecRepoDemo.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -375,7 +328,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZMTestSpecRepoDemo_Example/Pods-ZMTestSpecRepoDemo_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZMTestSpecRepoDemo_Example/Pods-ZMTestSpecRepoDemo_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98FBB189E43C4216400575C0 /* [CP] Check Pods Manifest.lock */ = {
@@ -488,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -521,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -536,9 +489,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZMTestSpecRepoDemo/ZMTestSpecRepoDemo-Prefix.pch";
 				INFOPLIST_FILE = "ZMTestSpecRepoDemo/ZMTestSpecRepoDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -551,9 +506,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZMTestSpecRepoDemo/ZMTestSpecRepoDemo-Prefix.pch";
 				INFOPLIST_FILE = "ZMTestSpecRepoDemo/ZMTestSpecRepoDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

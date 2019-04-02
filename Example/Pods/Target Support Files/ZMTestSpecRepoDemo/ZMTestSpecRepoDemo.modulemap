@@ -1,0 +1,6 @@
+framework module ZMTestSpecRepoDemo {
+  umbrella header "ZMTestSpecRepoDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

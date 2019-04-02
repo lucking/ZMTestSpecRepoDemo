@@ -1,0 +1,16 @@
+PODS:
+  - ZMTestSpecRepoDemo (0.1.0)
+
+DEPENDENCIES:
+  - ZMTestSpecRepoDemo (from `../`)
+
+EXTERNAL SOURCES:
+  ZMTestSpecRepoDemo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZMTestSpecRepoDemo: c6a74b5d84e231a1571e4039dc5592438e6296a0
+
+PODFILE CHECKSUM: eba0427f469be366c3a4f0a7f9cb870952cee032
+
+COCOAPODS: 1.6.1
