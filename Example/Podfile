@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ZMTestSpecRepoDemo_Example' do
+  pod 'ZMTestSpecRepoDemo', :path => '../'
+
+  target 'ZMTestSpecRepoDemo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
